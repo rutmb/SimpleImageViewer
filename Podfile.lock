@@ -1,0 +1,23 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - SimpleImageViewer (1.2.1):
+    - FLAnimatedImage
+
+DEPENDENCIES:
+  - SimpleImageViewer (from `.`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FLAnimatedImage
+
+EXTERNAL SOURCES:
+  SimpleImageViewer:
+    :path: "."
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  SimpleImageViewer: b0a6388cca4a470523f25e6fefb27a73546c5aeb
+
+PODFILE CHECKSUM: 9bd133350765e2de37420c0f9d22e2ffdf6bf321
+
+COCOAPODS: 1.5.3
