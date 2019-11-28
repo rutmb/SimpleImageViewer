@@ -46,11 +46,11 @@ public final class ImageViewerController: UIViewController {
         setupTransitions()
         setupActivityIndicator()
     }
-    
+	
     override public func viewWillDisappear(_ animated: Bool) {
-		super.viewWillDisappear(animated)
-	    completion?()
-	}
+	super.viewWillDisappear(animated)
+	completion?()
+    }
 }
 
 extension ImageViewerController: UIScrollViewDelegate {
