@@ -17,6 +17,8 @@ public final class ImageViewerController: UIViewController {
     fileprivate var transitionHandler: ImageViewerTransitioningHandler?
     fileprivate let configuration: ImageViewerConfiguration?
     
+    public var completion: (() -> Void)?
+
     public override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -44,6 +46,11 @@ public final class ImageViewerController: UIViewController {
         setupTransitions()
         setupActivityIndicator()
     }
+    
+    override public func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+	    completion?()
+	}
 }
 
 extension ImageViewerController: UIScrollViewDelegate {
